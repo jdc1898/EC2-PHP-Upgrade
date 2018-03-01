@@ -6,23 +6,11 @@ pipeline {
 
 	stages {
 		stage('Build') {
-			agent {
-				docker {
-					image 'eatel/proddev:test-buildenv'
-					reuseNode true
-				}
-			}
 			steps {
 				sh 'php --version'
 			}
 		}
 		stage('Test') {
-			agent {
-				docker {
-					image 'eatel/proddev:test-buildenv'
-					reuseNode true
-				}
-			}
 			steps {
 				sh 'pwd'
 				sh 'ls -la'
