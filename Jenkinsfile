@@ -16,7 +16,7 @@ pipeline {
 				sh 'ls -la'
 				sh '/usr/bin/composer.phar update --dev'
 				sh 'vendor/bin/phpunit tests/*Test*' 
-				echo 'Test Phase is here..'
+				echo 'Test Phase is here now and gone again....'
 			}
 		}
 		stage('Deploy') {
