@@ -29,7 +29,7 @@ pipeline {
 				}
 			}
 			steps {
-				echo 'Deploying...'
+				echo 'Deploying...Into new branch'
 				sh 'uname -a'
 			}
 		}
