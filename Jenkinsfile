@@ -14,7 +14,7 @@ pipeline {
 			steps {
 				sh 'pwd'
 				sh 'ls -la'
-				sh 'composer update --dev'
+				sh '/usr/bin/composer.phar update --dev'
 				sh 'vendor/bin/phpunit tests/*Test*' 
 				echo 'Test Phase is here.'
 			}
